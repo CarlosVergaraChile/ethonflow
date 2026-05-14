@@ -20,7 +20,14 @@ Flujo recomendado:
 - `deploy/ethon/index.html`: landing recomendada para `https://glstrategic.cl/ethon/`.
 - `deploy/ethonCOM/index.html`: version comercial.
 - `deploy/ethonCEO/index.html`: version enterprise/CEO.
-- Archivos HTML originales en la raiz: versiones historicas de trabajo.
+
+## Archivo historico
+
+- `archive/versions/`: versiones HTML historicas.
+- `archive/analysis/`: CSV u otros analisis puntuales.
+- `assets/source/`: imagenes y recursos fuente que no forman parte directa del deploy actual.
+
+La raiz del proyecto debe mantenerse limpia. La version publica vive en `deploy/`.
 
 ## Publicar en Hostinger
 
@@ -36,6 +43,25 @@ Flujo recomendado:
    - `/ethonCEO/`
 
 Si no quieres reemplazar la home principal de `glstrategic.cl`, sube solo la carpeta `deploy/ethon` como `public_html/ethon`.
+
+## Deploy Git en Hostinger
+
+Hostinger esta preparado para desplegar desde la rama:
+
+```text
+hostinger
+```
+
+Esa rama contiene solo la version publica, con esta estructura en la raiz:
+
+```text
+index.html
+ethon/
+ethonCOM/
+ethonCEO/
+```
+
+Para actualizar esa rama desde `main`, copiar el contenido de `deploy/` a la raiz de la rama `hostinger` y hacer push.
 
 ## Publicar con GitHub Pages
 

@@ -16,7 +16,8 @@ Este repositorio debe contener:
 - Landing en `deploy/ethon/`.
 - Tablero comercial en `deploy/ethonCOM/`.
 - Tablero CEO/enterprise en `deploy/ethonCEO/`.
-- Versiones historicas solo mientras se consolidan.
+- Versiones historicas en `archive/versions/`.
+- Assets fuente en `assets/source/`.
 
 ## Rutas publicas recomendadas
 
@@ -32,6 +33,11 @@ https://glstrategic.cl/ethonCEO/
 2. Cada avance util se guarda con `git commit`.
 3. GitHub guarda la historia y permite recuperar versiones.
 4. Hostinger recibe solo lo que este dentro de `deploy/`.
+
+## Ramas
+
+- `main`: trabajo, documentacion, archivo historico y version publica en `deploy/`.
+- `hostinger`: rama limpia para Hostinger; contiene solo lo que debe quedar en `public_html`.
 
 ## Limpieza de repos GitHub
 
