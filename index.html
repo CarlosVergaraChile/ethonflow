@@ -18,11 +18,11 @@
         repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(232,105,26,.032) 39px,rgba(232,105,26,.032) 40px),
         repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(232,105,26,.032) 39px,rgba(232,105,26,.032) 40px);
       pointer-events:none;z-index:0}
-    body::after{content:'';position:fixed;inset:0;background:radial-gradient(circle at 78% 16%,rgba(232,105,26,.12),transparent 32%),radial-gradient(circle at 12% 80%,rgba(46,127,217,.1),transparent 30%);pointer-events:none;z-index:0}
+    body::after{content:'';position:fixed;inset:0;background:radial-gradient(circle at 78% 16%,rgba(232,105,26,.12),transparent 32%),radial-gradient(circle at 12% 80%,rgba(46,127,217,.1),transparent 35%);pointer-events:none;z-index:0}
     .layout{position:relative;z-index:1;min-height:100vh}
-    header{background:linear-gradient(135deg,#060d18,#111927);border-bottom:2px solid var(--orange);padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;box-shadow:0 2px 28px rgba(232,105,26,.12)}
+    header{background:linear-gradient(135deg,#060d18,#111927);border-bottom:2px solid var(--orange);padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand-mark{width:38px;height:38px;background:linear-gradient(135deg,var(--orange),var(--orange-lt));border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#060d18;font-size:.78rem;letter-spacing:1px;box-shadow:0 0 14px rgba(232,105,26,.35)}
+    .brand-mark{width:38px;height:38px;background:linear-gradient(135deg,var(--orange),var(--orange-lt));border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:.85rem}
     .brand-name{font-size:1.12rem;font-weight:800;color:var(--text);letter-spacing:.02em}.brand-name span{color:var(--orange)}
     .brand-tag{font-size:.58rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
     .live-badge{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted);font-family:monospace}
@@ -35,7 +35,7 @@
     h1{font-size:clamp(2.5rem,6vw,5.6rem);line-height:.94;letter-spacing:0;margin-bottom:1rem}
     .lead{font-size:1.02rem;line-height:1.7;color:var(--muted);max-width:680px}
     .actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.8rem}
-    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:.65rem 1rem;border-radius:8px;border:1px solid var(--border);background:none;font-size:.8rem;cursor:pointer;color:var(--muted);text-decoration:none;transition:all .18s;font-weight:700}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:.65rem 1rem;border-radius:8px;border:1px solid var(--border);background:none;font-size:.8rem;cursor:pointer;color:var(--text);transition:all .18s;font-weight:600;text-decoration:none}
     .btn:hover{background:rgba(232,105,26,.08);color:var(--orange);border-color:rgba(232,105,26,.32);transform:translateY(-1px)}
     .btn-orange{background:var(--orange);color:#fff;border-color:var(--orange);box-shadow:0 8px 28px rgba(232,105,26,.22)}
     .btn-orange:hover{background:var(--orange-lt);color:#fff}
@@ -45,7 +45,7 @@
     .cockpit::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--orange),var(--uf),transparent)}
     .card-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;font-size:.9rem;font-weight:800}
     .badge{font-size:.6rem;padding:.16rem .5rem;border-radius:12px;background:var(--orange-dim);color:var(--orange);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
-    .ise-block{background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(232,105,26,.05));border:1px solid rgba(201,168,76,.3);border-radius:14px;padding:1.2rem;margin-bottom:1rem;display:flex;align-items:center;gap:1rem}
+    .ise-block{background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(232,105,26,.05));border:1px solid rgba(201,168,76,.3);border-radius:14px;padding:1.2rem;margin-bottom:1rem;display:flex;align-items:center;gap:1.5rem}
     .ise-num{font-size:3.25rem;font-weight:900;line-height:1;font-family:monospace;color:var(--uf)}
     .ise-label{font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:.2rem}
     .ise-title{font-size:.9rem;font-weight:800;color:var(--text);margin-bottom:.35rem}
@@ -61,14 +61,14 @@
     .kpi-val.orange{color:var(--orange)}.kpi-val.blue{color:var(--blue)}.kpi-val.green{color:var(--green)}.kpi-val.uf{color:var(--uf)}
     .kpi-sub{font-size:.68rem;color:var(--muted)}
     .route-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.25rem}
-    .route{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-decoration:none;color:var(--text);transition:all .18s;position:relative;overflow:hidden;min-height:185px;display:flex;flex-direction:column;justify-content:space-between}
+    .route{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-decoration:none;color:var(--text);transition:all .18s;position:relative;overflow:hidden;min-height:180px;display:flex;flex-direction:column}
     .route::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),transparent)}
     .route.ceo::before{background:linear-gradient(90deg,var(--uf),var(--orange),transparent)}
     .route:hover{transform:translateY(-2px);border-color:rgba(232,105,26,.36);box-shadow:0 0 24px rgba(232,105,26,.1)}
     .route-kicker{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:.5rem}
     .route-title{font-size:1.25rem;font-weight:900;margin-bottom:.35rem}
     .route-copy{font-size:.78rem;color:var(--muted);line-height:1.6;max-width:430px}
-    .route-meta{display:flex;justify-content:space-between;align-items:center;margin-top:1rem;color:var(--orange);font-size:.75rem;font-weight:800}
+    .route-meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto;color:var(--orange);font-size:.75rem;font-weight:800}
     .feed{display:flex;flex-direction:column;gap:.5rem;margin-top:1rem}
     .feed-item{display:flex;align-items:flex-start;gap:8px;padding:9px 11px;border-radius:8px;border:1px solid var(--border);background:var(--surface);font-size:.76rem}
     .fi-dot{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:800;flex-shrink:0}
@@ -104,8 +104,8 @@
             <p class="lead">Una puerta de entrada a los tableros Ethon: operacion comercial, sincronizacion ejecutiva, riesgo, forecast y lectura causal del negocio.</p>
           </div>
           <div class="actions">
-            <a class="btn btn-orange" href="/ethonCEO/">Abrir Ethon CEO</a>
-            <a class="btn btn-blue" href="/ethonCOM/">Abrir Ethon COM</a>
+            <a class="btn btn-orange" href="/ethonflow/ethonCEO/">Abrir Ethon CEO</a>
+            <a class="btn btn-blue" href="/ethonflow/ethonCOM/">Abrir Ethon COM</a>
           </div>
         </div>
 
@@ -152,7 +152,7 @@
       </section>
 
       <section class="route-grid" aria-label="Tableros disponibles">
-        <a class="route" href="/ethonCOM/">
+        <a class="route" href="/ethonflow/ethonCOM/">
           <div>
             <div class="route-kicker">Operacion comercial</div>
             <div class="route-title">Ethon COM</div>
@@ -160,7 +160,7 @@
           </div>
           <div class="route-meta"><span>COMERCIAL</span><span>Abrir</span></div>
         </a>
-        <a class="route ceo" href="/ethonCEO/">
+        <a class="route ceo" href="/ethonflow/ethonCEO/">
           <div>
             <div class="route-kicker">Direccion enterprise</div>
             <div class="route-title">Ethon CEO</div>
